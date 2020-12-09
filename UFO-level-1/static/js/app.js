@@ -28,7 +28,7 @@ tableData.forEach((obj) => {
 d3.selectAll(".table-head").style("font-size", "15px");
 
 var button = d3.select("#filter-btn");
-var form = d3.select("#fil-form");
+var form = d3.selectAll("#fil-form");
 
 function runEnter() {
   // Prevent the page from refreshing

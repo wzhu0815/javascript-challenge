@@ -17,7 +17,7 @@ d3.selectAll(".table-head").style("font-size", "15px");
 
 var button = d3.select("#filter-btn");
 var form = d3.select("#fil-form");
-
+var input = d3.selectAll("input");
 screenList = ["datetime", "city", "state", "shape"];
 
 function runEnter() {
@@ -49,4 +49,5 @@ function runEnter() {
   }
 }
 button.on("click", runEnter);
-form.on("submit", runEnter);
+
+input.on("change", runEnter);
